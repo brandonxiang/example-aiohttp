@@ -1,23 +1,6 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @brandonxiang
- Watch 36
-  Star 179
-  Fork 437 michaelliao/awesome-python3-webapp
- Code  Issues 2  Pull requests 2  Wiki  Pulse  Graphs
-Branch: day-03 Find file Copy pathawesome-python3-webapp/www/orm.py
-db792e5  Nov 3, 2015
-@michaelliao michaelliao fix async with
-1 contributor
-RawBlameHistory    230 lines (194 sloc)  7.83 KB
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'Michael Liao'
 
 import asyncio, logging
 
@@ -243,5 +226,3 @@ class Model(dict, metaclass=ModelMetaclass):
         rows = await execute(self.__delete__, args)
         if rows != 1:
             logging.warn('failed to remove by primary key: affected rows: %s' % rows)
-Status API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Contact Help
